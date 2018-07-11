@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.duytue.calculator3.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_weight="1"
+        android:id="@+id/signView"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="100dp"
+        android:padding="10dp"
+        android:paddingTop="2dp"
+        android:gravity="right"
+        android:textSize="48sp"
+        android:layout_weight="3"
+        android:elevation="10dp" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="4"
+        android:layout_weight="4"
+        android:background="#434343">
+
+        <Button
+            android:id="@+id/number7"
+            android:text="7"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/number8"
+            android:text="8"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/number9"
+            android:text="9"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/plus"
+            android:text="+"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:textColor="#ffffff"
+            android:background="#636363"
+            android:foreground="?android:attr/selectableItemBackground" />
+
+
+        <Button
+            android:id="@+id/number4"
+            android:text="4"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/number5"
+            android:text="5"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/number6"
+            android:text="6"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/subtract"
+            android:text="-"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:textColor="#ffffff"
+            android:background="#636363"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+        <Button
+            android:id="@+id/number1"
+            android:text="1"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/number2"
+            android:text="2"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/number3"
+            android:text="3"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/multi"
+            android:text="x"
+            android:textSize="24sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:textColor="#ffffff"
+            android:background="#636363"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+        <Button
+            android:id="@+id/clear"
+            android:text="C"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/number0"
+            android:text="0"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/equal"
+            android:text="="
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/div"
+            android:text="/"
+            android:textSize="30sp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:textColor="#ffffff"
+            android:background="#636363"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+    </GridLayout>
+</LinearLayout>

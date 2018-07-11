@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="com.duytue.hikerapp.MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/backgroundgrey"
+        android:scaleType="centerCrop"
+        android:id="@+id/backgroundImage"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:id="@+id/statusFill" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude: Loading"
+            android:textColor="#fafafa"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/latitudeView"
+            android:layout_gravity="center"
+            android:shadowColor="#424242"
+            android:shadowDx="-2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longtitude: Loading"
+            android:textColor="#fafafa"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/longtitudeView"
+            android:layout_gravity="center"
+            android:shadowColor="#424242"
+            android:shadowDx="-2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accuracy: Loading"
+            android:textColor="#fafafa"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/accuracyView"
+            android:layout_gravity="center"
+            android:shadowColor="#424242"
+            android:shadowDx="-2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed: Loading"
+            android:textColor="#fafafa"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/speedView"
+            android:layout_gravity="center"
+            android:shadowColor="#424242"
+            android:shadowDx="-2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bearing: Loading"
+            android:textColor="#fafafa"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/bearingView"
+            android:layout_gravity="center"
+            android:shadowColor="#424242"
+            android:shadowDx="-2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altitude: Loading"
+            android:textColor="#fafafa"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/altitudeView"
+            android:layout_gravity="center"
+            android:shadowColor="#424242"
+            android:shadowDx="-2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: Loading"
+            android:textColor="#fafafa"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/addressView"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:shadowColor="#424242"
+            android:shadowDx="-2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01"/>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.duytue.eggtimer.MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/seekBar"
+        android:progressBackgroundTint="#ffffff"
+        android:thumbTint="#f2f2f2"
+        android:progressTint="#f2f2f2"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/clock"
+        android:id="@+id/clockIMG"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=":"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colonText"
+        android:textSize="50dp"
+        android:layout_alignTop="@+id/minuteText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondText"
+        android:textSize="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignBaseline="@+id/colonText"
+        android:layout_alignBottom="@+id/colonText"
+        android:layout_toEndOf="@+id/colonText" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        android:id="@+id/minuteText"
+        android:textSize="50dp"
+        android:layout_marginEnd="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/colonText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f2f2f2"
+        android:text="START"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="startTimer"
+        android:id="@+id/button"/>
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/videoView"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Minesweeper</string>
+    <string name="instruction">PLEASE INPUT AT LEAST 5X5 GRID FOR BETTER GAME EXPERIENCE</string>
+    <string name="rowhint">Number of rows</string>
+    <string name="col_hint">Number of columns</string>
+    <string name="start_game">Start game</string>
+    <string name="play_again">Play again</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.duytue.userlocation2.MainActivity">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="111dp">
+
+        <Button
+            android:id="@+id/onButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:onClick="changeUpdateState"
+            android:tag="1"/>
+
+        <Button
+            android:id="@+id/offButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:onClick="changeUpdateState"
+            android:tag="0"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mLongitudeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Hello World!" />
+
+        <TextView
+            android:id="@+id/mLatitudeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/stateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mLongitudeText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text="Update OFF" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.duytue.higherorlower.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:text="The Higher or Lower Game"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="The game will generate a random number from 1 to 100 at the beginning. You just need to enter your guess and I will tell you that number is higher or lower than the goal number. Let see how many times you need to reach the answer."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructionText"
+        android:layout_below="@+id/instruction"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/inputNumber"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="INSTRUCTION"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instruction"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/inputNumber"
+        android:layout_alignEnd="@+id/instruction"
+        android:onClick="userInput" />
+</RelativeLayout>

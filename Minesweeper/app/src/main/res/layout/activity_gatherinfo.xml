@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:id="@+id/instructionView"
+        android:text="@string/instruction"
+        android:textColor="#424242"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/rowhint"
+        android:id="@+id/rowCountView"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/col_hint"
+        android:inputType="numberDecimal"
+        android:id="@+id/colCountView"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/start_game"
+        android:onClick="startGameActivity"
+        android:elevation="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10 x 10"
+            android:id="@+id/preset1"
+            android:tag="10"
+            android:onClick="presetGenGame"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15 x 15"
+            android:id="@+id/preset2"
+            android:tag="15"
+            android:onClick="presetGenGame"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20 x 20"
+            android:id="@+id/preset3"
+            android:tag="20"
+            android:onClick="presetGenGame"/>
+    </LinearLayout>
+
+
+</LinearLayout>

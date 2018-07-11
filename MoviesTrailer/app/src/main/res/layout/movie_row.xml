@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/cv"
+        android:layout_marginTop="8dp"
+		app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/posterView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movienameView"
+                android:layout_toRightOf="@id/posterView"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textSize="28sp" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
